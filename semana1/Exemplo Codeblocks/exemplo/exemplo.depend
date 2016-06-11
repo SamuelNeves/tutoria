@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1464195614 source:/home/samuel/tutoria/semana1/Exemplo Codeblocks/exemplo/main.c
+	<stdio.h>
+	<stdlib.h>
+
