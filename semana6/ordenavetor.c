@@ -28,7 +28,6 @@ void  ordenaVetor(int vetor[], int tam){
     }
       imprimeVetor(vetor,tam);
   }
-
 }
 int main(){
   int vetor[5];
