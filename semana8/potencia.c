@@ -12,7 +12,6 @@ void potencia(int b,int e, int * resultado){
     potencia(b,e-1,resultado);
   }
 }
-
 int main(){
   int R=1;
   potencia(3,4,&R);
