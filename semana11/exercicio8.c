@@ -4,10 +4,21 @@ valores possuem a maior soma. */
 
 #include<stdio.h>
 #include<time.h>
+#include<stdlib.h>
+void imprimeMatriz(int matriz[20][20]){
+  int i,j;
+  for(i=0;i<20;i++){
+    for(j=0;j<20;j++){
+        printf(" %d ",matriz[i][j] );
+    }
+    printf("\n" );
+  }
+
+}
 void preencheMatriz(int matriz[20][20]){
   int i,j;
   for(i=0;i<20;i++){
-    for(j=0;i<20;j++){
+    for(j=0;j<20;j++){
       matriz[i][j]=rand()%100;
     }
   }
@@ -60,8 +71,10 @@ int main(){
   int C[20][20];
   int somaLinha[20];
   int somaColuna[20];
+  preencheMatriz(C);
   calculaSomaColunas(C,somaColuna);
   calculaSomaLinhas(C,somaLinha);
+  imprimeMatriz(C);
   printf("O indice da linha que contem a menor soma e %d\n",indiceMenorSomaLinha(somaLinha));
   printf("O indice da coluna que contem a maior soma e %d\n",indiceMaiorSomaColuna(somaColuna) );
   return 0;
